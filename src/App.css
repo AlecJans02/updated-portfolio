@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#gradient-canvas {
+  width:100%;
+  height:100%;
+  --gradient-color-1: #043D5D; 
+  --gradient-color-2: #032E46; 
+  --gradient-color-3: #23B684;  
+  --gradient-color-4: #0F595E;
+  z-index: 1;
+  position: relative;
+}
+
+.animatedGradient {
+  width: 100%;
+  height: 600px;
+}
+
+.gradientText {
+  color: white;
+  font-size: 2.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gradientTitle {
+  color: white;
+  font-size: 3.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gradientOverlay {
+  position:absolute; top:200px; left:0px;
+  background-color: transparent;
+  z-index: 2;
+  width: 100%;
+}
+
+.portfolioBody {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.objectiveTitle {
+  color: black;
+  font-size: 3.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.objectiveP {
+  color: black;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.languedgeBody {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes bg-animation {
+  0% {
+      background-position: left;
+  }
+  100% {
+      background-position: right;
+  }
+}
+
+.languedgeDiv {
+  height: auto;
+  width: 70%;
+  background: linear-gradient(160deg, rgba(74,230,176,1) 0%, rgba(113,233,203,1) 14%, rgba(233,151,223,1) 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 20px;
+  background-size: 400%;
+  animation: bg-animation 3s infinite alternate;
+}
+
+.languedgeTitle {
+  color: black;
+  font-size: 3.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.languedgeBox {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(225, 225, 225, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(225, 225, 225, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.langImg {
+  object-fit: fill;
+  width: 150px;
+  height: 150px;
+}
+
+.projectBody {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectDisplays {
+  background: linear-gradient(160deg, rgba(74,230,176,1) 0%, rgba(113,233,203,1) 14%, rgba(233,151,223,1) 100%);
+  width: 70%;
+  min-width: 900px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-size: 400%;
+  animation: bg-animation 3s infinite alternate;
+}
+
+.projectTitle {
+  color: black;
+  font-size: 3.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.projectDiv {
+  width: 90%;
+  height: auto;
+  background-color: rgba(225, 225, 225, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(225, 225, 225, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.githubDisplay {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.github {
+  height: 100px;
+  width: 400px;
+  background-color: rgba(225, 225, 225, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(225, 225, 225, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.githubText {
+  color: black;
+  font-size: 3.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.projectDisplayTitle {
+  color: black;
+  font-size: 3.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.projectTools {
+  color: black;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.projectDescription {
+  color: black;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.projectButtons {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.buttonText {
+  color: black;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+.buttonDiv {
+  background-color: rgba(225, 225, 225, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(225, 225, 225, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  height: 70px;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contact {
+  margin-top: 150px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 200px;
+}
+
+.contactTitle {
+  color: black;
+  font-size: 3.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contactInfo {
+  color: black;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
